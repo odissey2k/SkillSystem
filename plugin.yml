@@ -1,0 +1,48 @@
+name: Jobs
+version: 1.0-SNAPSHOT
+main: com.odissey.Jobs
+api-version: 1.20
+commands:
+  rebirth:
+    description: Reinicia tu nivel en un trabajo.
+    usage: /rebirth <trabajo>
+  sell:
+    description: Vende ítems en tu mano.
+    usage: /sell
+  sellall:
+    description: Vende todos los ítems en tu inventario.
+    usage: /sellall
+  jobs:
+    description: Administra tus trabajos.
+    usage: /jobs [join/leave/stats/menu/admin]
+  skills:
+    description: Administra tus habilidades.
+    usage: /skills [admin]
+permissions:
+  jobs.user:
+    description: Permiso para usar el sistema de trabajos.
+    default: true
+  jobs.admin:
+    description: Permiso para usar comandos de administración de trabajos.
+    default: op
+  skills.user:
+    description: Permiso para usar el sistema de habilidades.
+    default: true
+  skills.admin:
+    description: Permiso para usar comandos de administración de habilidades.
+    default: op
+  skills.limit.bypass:
+    description: Permiso para ignorar límites de habilidades.
+    default: op
+  skills.cooldown.bypass:
+    description: Permiso para ignorar cooldowns de habilidades.
+    default: op
+  skills.points.cooldown.bypass:
+    description: Permiso para ignorar cooldowns de puntos de habilidad.
+    default: op
+  sell.cooldown.bypass:
+    description: Permiso para ignorar cooldowns de venta.
+    default: op
+  sellall.cooldown.bypass:
+    description: Permiso para ignorar cooldowns de venta masiva.
+    default: op
